@@ -16,6 +16,8 @@ function initDroidData(
   // get data onto DOM
   // create button for each droid
     // show home planet on click
+      // fetch planet data (name) from API (again)
+      // show planet data  
 )
 
 function initCrawlButton(){
