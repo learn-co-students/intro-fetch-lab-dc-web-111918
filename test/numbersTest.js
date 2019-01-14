@@ -41,7 +41,7 @@ describe("Fetch exercises", () => {
         }, 0)
       });
     });
-    ////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////
 
     describe("Pick a Number", () => {
       const div = document.querySelector('#random-math-fact');
@@ -91,14 +91,15 @@ describe("Fetch exercises", () => {
         Promise.resolve({ text: () => Promise.resolve(fakeData) })
       );
 
-      it("When the page loads, fetch a fact about this year", (done) => {
-        const year = new Date().getFullYear();
 
-        setTimeout(()=>{
-          expect(window.fetch).to.have.been.calledWith(`http://numbersapi.com/${year}/year`);
-          done();
-        }, 0)
-      });
+      // it("When the page loads, fetch a fact about this year", (done) => {
+      //   const year = new Date().getFullYear();
+      //
+      //   setTimeout(()=>{
+      //     expect(window.fetch).to.have.been.calledWith(`http://numbersapi.com/${year}/year`);
+      //     done();
+      //   }, 0)
+      // });
 
       it("When the promise is resolved, the fact should be displayed in the `#year-history` div", (done) => {
 
